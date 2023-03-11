@@ -6,3 +6,7 @@
 - create project in vercel
 - choose project
 - deploy
+
+## Structure and style
+
+- [sass](https://create-react-app.dev/docs/adding-a-sass-stylesheet/)

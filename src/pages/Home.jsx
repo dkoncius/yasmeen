@@ -1,22 +1,38 @@
-import image from '../images/compressed.jpg'
+import image from '../images/yasmeen.webp'
 import { Link } from 'react-router-dom'
 
-export default function Home() {
-
+export default function Home({imageDetails}) {
+ 
   return (
     <>
-      <h1>Home</h1>
-      <nav>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/model">Model</Link>
-          </li>
-        </ul>
-      </nav>
-      <img src={image} alt="" />
+      <main>
+      <div className='container'>
+        <div className='row center'>
+          <div className='image-container'>
+            <div
+              className='thumbnail'
+              style={{
+                width: imageDetails.width,
+                height: imageDetails.height,
+              }}>
+              <div className='frame'>
+                <Link to={`/model`}>
+                  <img src={image} alt='Yasmeen Tariq' />
+                </Link>
+              </div>
+            </div>
+            <div className='information'>
+              <div className='title'>Yasmeen Tariq</div>
+              <div className='location'>
+                <span>28.538336</span>
+                <span>-81.379234</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+      
     </>
   )
 }
