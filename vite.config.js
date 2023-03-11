@@ -9,10 +9,5 @@ export default defineConfig({
   },
   build: {
     base: '/'
-  },
-  "compilerOptions": {
-    "paths": {
-      "react/jsx-runtime": ["node_modules/react/jsx-runtime"]
-    }
   }
 })
