@@ -1,0 +1,2 @@
+- [react-router](https://www.w3schools.com/react/react_router.asp)
+- [deplay to vercel](https://vitejs.dev/guide/static-deploy.html)
