@@ -25,7 +25,7 @@ function App() {
       {/* To check change url /model and /home */}
       <Route path="/" element={<Home imageDetails={imageDetails} />} /> 
       <Route path="/home" element={<Home imageDetails={imageDetails}/>} />
-      <Route path="model" element={<Model imageDetails={imageDetails}/>} />
+      <Route path="model" element={<Model/>} />
     </Routes>
   </BrowserRouter>
   )

@@ -170,19 +170,37 @@ main {
   }
 }
 
-//single
+//model
 .model {
   .container {
     .top-row {
+      font-size: 20px;
       height: 60vh;
       width: 100%;
       align-items: flex-end;
+
+      @media (max-width: 1440px){
+        height: 50vh;
+        font-size: 15px;
+      }
+
+      @media (max-width: 1000px){
+        font-size: 10px;
+      }
+
+      @media (max-width: 768px){
+        font-size: 1vw;
+      }
       .top {
         padding-bottom: 40px;
         .details {
           display: flex;
           align-items: center;
           justify-content: space-between;
+
+          @media (max-width: 768px){
+            font-size: 2em;
+          }
           .location {
             span:nth-child(2) {
               margin-left: 16px;
@@ -201,11 +219,8 @@ main {
             display: inline-block;
             position: relative;
             font-weight: 400;
-            font-size: 224px;
+            font-size: 3em;
             font-family: "Maragsa";
-            @media (max-width: 1440px) {
-              font-size: 128px;
-            }
           }
         }
       }
@@ -218,7 +233,7 @@ main {
         width: 100%;
         .thumbnail-single {
           width: 100%;
-          height: 800px;
+          height: 500px;
           margin: 0 auto;
           overflow: hidden;
           position: absolute;
@@ -227,7 +242,16 @@ main {
           .frame-single {
             img {
               position: absolute;
+              top: -150%;
               width: 100%;
+
+              @media (max-width: 1400px){
+                top: -50%;
+              }
+
+              @media (max-width: 768px){
+                top: 0;
+              }
             }
           }
         }
@@ -235,7 +259,7 @@ main {
       .scroll-for-more {
         position: absolute;
         bottom: 200px;
-        left: 200px;
+        left: 15%;
         z-index: 20;
         .icon {
           svg {
@@ -258,6 +282,16 @@ main {
           color: $white;
           text-transform: uppercase;
         }
+
+        @media (max-width: 768px){
+          font-size: 10px;
+
+          .icon {
+            svg {
+              width: 14px;
+            }
+          }
+        }
       }
     }
   }
@@ -270,15 +304,22 @@ main {
     .row {
       justify-content: space-between;
       align-items: flex-start;
+      font-size: 15px;
+      gap: 30px;
+
+      @media (max-width: 768px){
+        flex-direction: column;
+      }
       h2 {
-        font-size: 28px;
+        font-size: 2.5em;
+        flex: 1;
       }
       p {
         font-family: "Helvetica Neue";
-        font-size: 16;
-        line-height: 28px;
+        font-size: 1em;
+        line-height: 2em;
         font-weight: 400;
-        width: 800px;
+        flex: 2;
       }
     }
   }
