@@ -1,2 +1,8 @@
 - [react-router](https://www.w3schools.com/react/react_router.asp)
-- [deplay to vercel](https://vitejs.dev/guide/static-deploy.html)
+
+##deploy on vercel
+
+- create github repozitory
+- create project in vercel
+- choose project
+- deploy
