@@ -1,4 +1,4 @@
-import ScrollForMore from "../components/scrollForMore";
+import ScrollForMore from "../components/ScrollForMore";
 import image from '../images/yasmeen.webp'
 
 const Model = () => {
