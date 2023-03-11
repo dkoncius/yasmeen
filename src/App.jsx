@@ -14,8 +14,8 @@ import Header from './components/Header';
 function App() {
 
   const imageDetails = {
-    width: 524,
-    height: 650,
+    width: 350,
+    height: 450,
   };
 
   return (
