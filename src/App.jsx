@@ -1,32 +1,21 @@
 import React from 'react'
-import {
-  BrowserRouter, Routes, Route
-} from "react-router-dom";
-import './App.scss'
+import { BrowserRouter } from 'react-router-dom'
 
 // Pages
-import Home from './pages/Home'
-import Model from './pages/Model'
-
+import AnimatePages from './pages/AnimatePages';
+  
 // Components
 import Header from './components/Header';
 
-function App() {
+// Style
+import './App.scss'
 
-  const imageDetails = {
-    width: 350,
-    height: 450,
-  };
+function App() {
 
   return (
     <BrowserRouter>
     <Header/>
-    <Routes>
-      {/* To check change url /model and /home */}
-      <Route path="/" element={<Home imageDetails={imageDetails} />} /> 
-      <Route path="/home" element={<Home imageDetails={imageDetails}/>} />
-      <Route path="model" element={<Model/>} />
-    </Routes>
+    <AnimatePages/>
   </BrowserRouter>
   )
 }
