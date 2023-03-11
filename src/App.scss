@@ -252,9 +252,13 @@ main {
       }
       .scroll-for-more {
         position: absolute;
-        bottom: 200px;
+        top: 15%;
         left: 15%;
         z-index: 20;
+
+        @media (max-width: 600px){
+          top: 5%;
+        }
         .icon {
           svg {
             height: auto;
@@ -294,20 +298,34 @@ main {
 .detailed-information {
   margin-top: 150px;
   height: 600px;
+  font-size: 15px;
 
-  @media (max-width: 1440px){
+  @media (max-width: 1200px){
     margin-top: 0;
+  }
+
+  @media (max-width: 1000px){
+    margin-top: -150px;
+  }
+
+  @media (max-width: 768px){
+    margin-top: -200px;
+    font-size: 10px;
+  }
+
+  @media (max-width: 500px){
+    margin-top: -300px;
   }
   
   .container {
     .row {
       justify-content: space-between;
       align-items: flex-start;
-      font-size: 15px;
       gap: 30px;
 
       @media (max-width: 768px){
         flex-direction: column;
+        gap: 0;
       }
       h2 {
         font-size: 2.5em;
